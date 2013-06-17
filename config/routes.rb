@@ -1,4 +1,7 @@
 Tanakakazuki::Application.routes.draw do
+  resources :shits
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -14,16 +17,11 @@ Tanakakazuki::Application.routes.draw do
   #   resources :products
 
   # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
+     resource :sheep do
+       member do
+         get 'index' ,'count'
+       end
+     end
 
   # Sample resource route with sub-resources:
   #   resources :products do
