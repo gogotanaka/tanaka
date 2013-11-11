@@ -21,3 +21,13 @@ gem 'jquery-rails', '2.0.2'
 group :production do
   gem 'pg', '0.12.2'
 end
+
+gem 'font-awesome-rails'
+
+# Hamlgem 'haml-rails'
+gem 'haml-rails'
+
+group :development do
+  # erbからhamlに変換
+  gem 'erb2haml'
+end

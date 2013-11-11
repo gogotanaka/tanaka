@@ -1,3 +1,26 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "font-awesome";  //これを追加
+@import url(http://fonts.googleapis.com/css?family=Days+One);
+
+h1 {
+	font-size: 40px;
+	color: #222222;
+	font-family: 'Days One', sans-serif;
+}
+
+h2.subtitle {
+	margin-top: 20px;
+	color: #222222;
+}
+
+div.icon {
+	width: 300px;
+	float: left;
+	text-align:center;
+	i {
+		color: #222222;
+		font-size: 250px;
+	}
+}

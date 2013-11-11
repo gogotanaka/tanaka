@@ -1,6 +1,17 @@
 Tanakakazuki::Application.routes.draw do
-  resources :shits
+  resources :programs
 
+
+  resources :pictures
+
+
+  resources :musics
+
+
+  resources :texts
+
+
+  get "welcome/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -17,11 +28,16 @@ Tanakakazuki::Application.routes.draw do
   #   resources :products
 
   # Sample resource route with options:
-     resource :sheep do
-       member do
-         get 'index' ,'count'
-       end
-     end
+  #   resources :products do
+  #     member do
+  #       get 'short'
+  #       post 'toggle'
+  #     end
+  #
+  #     collection do
+  #       get 'sold'
+  #     end
+  #   end
 
   # Sample resource route with sub-resources:
   #   resources :products do
@@ -46,7 +62,7 @@ Tanakakazuki::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'welcome#index'
+  root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 
