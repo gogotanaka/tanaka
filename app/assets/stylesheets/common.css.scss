@@ -1,3 +1,7 @@
+@import "font-awesome";  //これを追加
+@import url(http://fonts.googleapis.com/css?family=Days+One);
+@import url(http://fonts.googleapis.com/css?family=Electrolize);
+
 /* clearfix */
 .clearfix:after {
   clear: both;
@@ -5,4 +9,15 @@
   display: block;
   height: 0;
   visibility: hidden;
+}
+
+a {
+  outline: medium none;
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: #999999;
+  text-decoration: none;
 }

@@ -1,21 +1,7 @@
 %h1 プログラミングの青果物置く
 
-%table
-  %tr
-    %th Title
-    %th Contents
-    %th
-    %th
-    %th
-
-  - @programs.each do |program|
-    %tr
-      %td= program.title
-      %td= program.contents
-      %td= link_to 'Show', program
-      %td= link_to 'Edit', edit_program_path(program)
-      %td= link_to 'Destroy', program, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
 %br
+%h1=link_to fa_icon('github') +  " Github", "https://github.com/gogotanaka"
+%br
+%h1=link_to fa_icon('book') +  " マージャン学部", "http://ma-jang.com/"
 
-= link_to 'New Program', new_program_path

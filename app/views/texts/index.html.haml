@@ -1,21 +1,11 @@
 %h1 備忘録だったり、ブログだったり
-
-%table
-  %tr
-    %th Title
-    %th Contents
-    %th
-    %th
-    %th
-
-  - @texts.each do |text|
-    %tr
-      %td= text.title
-      %td= text.contents
-      %td= link_to 'Show', text
-      %td= link_to 'Edit', edit_text_path(text)
-      %td= link_to 'Destroy', text, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
 %br
+- @texts.each do |text|
+  .text_item.clearfix
+    .icon= link_to fa_icon('file-text-o'), text_path(text)
+    %h2= text.title
 
 = link_to 'New Text', new_text_path
+%br
+%br
+= link_to 'Back', root_path
