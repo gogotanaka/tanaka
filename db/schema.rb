@@ -11,32 +11,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131109154543) do
+ActiveRecord::Schema.define(:version => 20131204074849) do
 
   create_table "musics", :force => true do |t|
     t.string   "title"
-    t.string   "contents"
+    t.text     "contents"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "pictures", :force => true do |t|
     t.string   "title"
-    t.string   "contents"
+    t.text     "contents"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "programs", :force => true do |t|
     t.string   "title"
-    t.string   "contents"
+    t.text     "contents"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "texts", :force => true do |t|
     t.string   "title"
-    t.string   "contents"
+    t.text     "contents"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
