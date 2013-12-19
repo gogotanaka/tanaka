@@ -8,7 +8,20 @@ Tanakakazuki::Application.routes.draw do
   resources :musics
 
 
-  resources :texts
+  resources :texts do
+    collection do
+      get :texttukuru657
+    end
+  end
+
+  resources :admin do
+    member do
+      get :text_edit_3845
+    end
+    collection do
+      get :text_new_we9r7
+    end
+  end
 
 
   get "welcome/index"
