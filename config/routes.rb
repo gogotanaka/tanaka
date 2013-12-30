@@ -9,8 +9,8 @@ Tanakakazuki::Application.routes.draw do
 
 
   resources :texts do
-    collection do
-      get :texttukuru657
+    member do
+      get :ern37ir3h832
     end
   end
 

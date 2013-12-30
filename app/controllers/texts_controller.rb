@@ -33,7 +33,7 @@ class TextsController < ApplicationController
   end
 
   # GET /texts/1/edit
-  def edit
+  def ern37ir3h832
     @text = Text.find(params[:id])
   end
 

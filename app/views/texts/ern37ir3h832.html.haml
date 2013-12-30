@@ -5,3 +5,5 @@
 = link_to 'Show', @text
 \|
 = link_to 'Back', texts_path
+
+= link_to 'Destroy', @text, confirm: 'Are you sure?', method: :delete
